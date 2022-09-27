@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Gerador de Senhas - Saulo Costa</title>
+</head>
+
+<body>
+
+    <main>
+        <div id="wrap">
+            <div id="wrap_pass">
+                <div id="pass_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="white">
+                        <path
+                            d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zm40-176c-22.1 0-40-17.9-40-40s17.9-40 40-40s40 17.9 40 40s-17.9 40-40 40z" />
+                    </svg>
+                </div>
+                <pre id="pass">SuperSenha123</pre>
+                <div id="wrap_security_level">
+                    <div id="safe_bar">
+                        <!-- js -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="configs">
+                <div id="size_wrap">
+                    <div id="controls">
+                        <button id="more">+</button>
+                        <button aria-keyshortcuts="ArrowDown" id="less">-</button>
+                    </div>
+
+                    <input value="8" id="size" type="text" disabled>
+                </div>
+
+                <div id="types">
+                    <div class="wrap_type">
+                        <input checked type="checkbox" class="type" id="upper">
+                        <label for="upper">
+                            <u>M</u>aiúscula
+                        </label>
+                    </div>
+
+                    <div class="wrap_type">
+                        <input checked type="checkbox" class="type" id="lower">
+                        <label for="lower">M<u>i</u>núscula</label>
+                        <div class="control_indicator"></div>
+                    </div>
+
+                    <div class="wrap_type">
+                        <input checked type="checkbox" class="type" id="number">
+                        <label for="number">
+                            <u>N</u>úmeros
+                        </label>
+                    </div>
+
+                    <div class="wrap_type">
+                        <input type="checkbox" class="type" id="special">
+                        <label for="special">
+                            <u>E</u>speciais
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="btns">
+                <button class="btn" id="gerar">
+                    <u>G</u>erar Senha</button>
+                <button class="btn" id="copiar">
+                    <u>C</u>opiar
+                </button>
+            </div>
+        </div>
+    </main>
+    <!-- You can also require other files to run in this process -->
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
