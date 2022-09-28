@@ -18,7 +18,7 @@
 <hr>
 ## USE
 
-```SH
+```sh
 npm install;
 npm start;
 ## gerar app para windows ('electron-builder --win')
