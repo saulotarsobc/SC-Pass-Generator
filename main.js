@@ -1,5 +1,5 @@
-// Modules to control application life and create native browser window
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain, clipboard } = require('electron');
+const path = require('path');
 
 function createWindow() {
     const mainWindow = new BrowserWindow({
@@ -9,8 +9,12 @@ function createWindow() {
         maxHeight: 600,
         minWidth: 390,
         minHeight: 600,
+        webPreferences: {
+            nodeIntegration: true,
+            preload: path.join(__dirname, './preload.js')
+        },
+        icon: path.join(__dirname, './icon/padlock.png')
     });
-
     mainWindow.loadFile('index.html');
     mainWindow.setMenu(null);
     // mainWindow.webContents.openDevTools();
@@ -19,10 +23,16 @@ function createWindow() {
 app.whenReady().then(() => {
     createWindow();
     app.on('activate', function () {
-        if (BrowserWindow.getAllWindows().length === 0) createWindow();
+        if (BrowserWindow.getAllWindows().length === 0) {
+            createWindow();
+        };
     })
 });
 
 app.on('window-all-closed', function () {
     if (process.platform !== 'darwin') app.quit();
+});
+
+ipcMain.on('request-main-process-action', (event, arg) => {
+    event.sender.send('main-process-response', arg);
 });

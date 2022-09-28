@@ -13,6 +13,7 @@ const MORE_LIMIT = 24;
 const LESS_LIMIT = 8;
 const INTERVAL = 22;
 
+
 function playKeySound() {
     let key_sound = new Audio('./sounds/key_sound.wav');
     key_sound.play();
@@ -20,7 +21,8 @@ function playKeySound() {
 
 copiar.addEventListener('click', () => {
     playKeySound();
-    copyPass();
+    alert("Senha copiada: " + (pass.innerHTML));
+    // copyPass();
 });
 
 gerar.addEventListener('click', () => {
@@ -39,10 +41,10 @@ less.addEventListener('click', () => {
 });
 
 
-function copyPass() {
-    navigator.clipboard.writeText(pass.innerHTML);
-    alert("Senha copiada: " + (pass.innerHTML));
-}
+// function copyPass() {
+//     window.clipboard.writeText(pass.innerHTML);
+//     alert("Senha copiada: " + (pass.innerHTML));
+// }
 
 document.addEventListener('keydown', (event) => {
     let key = event.code;
