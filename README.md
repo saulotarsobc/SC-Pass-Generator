@@ -1,4 +1,4 @@
-# GERADOR DE SENHAS
+<h1>GERADOR DE SENHAS</h1>
 
 <div style="align-items:center">
     <img src="./img/banner4.png" alt="banner">
@@ -6,7 +6,7 @@
 
 <hr>
 
-## REFÊRENCIAS
+<h2>REFÊRENCIAS</h2>
 
 <ul>
     <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden">MDN - aria-hidden</a></li>
@@ -18,11 +18,11 @@
 
 <hr>
 
-## USE
+<h2>COMO USAR?</h2>
 
 ```sh
 npm install;
 npm start;
-## gerar app para windows ('electron-builder --win')
+# gerar app para windows ('electron-builder --win')
 npm run pack-win;
 ```

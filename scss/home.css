@@ -1,0 +1,234 @@
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+}
+
+body #wrap {
+  height: 530px;
+  width: 358px;
+  border-radius: 10px;
+  padding: 20px;
+  background: #c5c5c51a;
+  -webkit-box-shadow: 8px 7px 10px -5px #000000bf;
+  box-shadow: 8px 7px 30px -10px #000000bf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #wrap #wrap_pass {
+  height: 70px;
+  border-radius: 6px;
+  background: #313131;
+  -webkit-box-shadow: 8px 7px 10px -5px #000000bf;
+  box-shadow: 8px 7px 30px -10px #000000bf;
+  position: relative;
+}
+
+body #wrap #wrap_pass #pass_icon {
+  position: absolute;
+  background-color: white;
+  height: 31px;
+  width: 31px;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: translate(-12px, -12px);
+          transform: translate(-12px, -12px);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #wrap #wrap_pass #pass_icon svg {
+  fill: #000000;
+  height: 20px;
+  width: 20px;
+}
+
+body #wrap #wrap_pass #wrap_security_level {
+  background-color: #ffffffa4;
+  border-radius: 3px;
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  -webkit-transform: translate(0px, 74px);
+          transform: translate(0px, 74px);
+  overflow: hidden;
+  -webkit-box-shadow: 8px 7px 10px -5px #000000bf;
+  box-shadow: 8px 7px 30px -10px #000000bf;
+}
+
+body #wrap #wrap_pass #wrap_security_level #safe_bar {
+  -webkit-transition: all 700ms;
+  transition: all 700ms;
+  height: 100%;
+}
+
+body #wrap #wrap_pass #pass {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 22px;
+  -webkit-transform: translate(15px, 18px);
+          transform: translate(15px, 18px);
+  width: 90%;
+  overflow: hidden;
+}
+
+body #wrap #configs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 140px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 6px;
+  -webkit-box-shadow: 8px 7px 10px -5px #000000bf;
+  box-shadow: 8px 7px 30px -10px #000000bf;
+}
+
+body #wrap #configs #size_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #wrap #configs #size_wrap #controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  width: 58px;
+}
+
+body #wrap #configs #size_wrap #controls button {
+  height: 50%;
+  margin: 1px;
+  background-color: #313131;
+  color: white;
+  font-size: 40px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: scale .2s;
+  transition: scale .2s;
+}
+
+body #wrap #configs #size_wrap #controls button:hover {
+  scale: 1.03;
+}
+
+body #wrap #configs #size_wrap #size {
+  width: 80px;
+  margin: 1px;
+  font-size: 40px;
+  text-align: center;
+  background: #313131;
+  color: white;
+  border-radius: 6px;
+}
+
+body #wrap #configs #types {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+body #wrap #configs #types .wrap_type {
+  cursor: pointer;
+  text-justify: center;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #wrap #configs #types .wrap_type input {
+  height: 100%;
+}
+
+body #wrap #configs #types .wrap_type label {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 300px;
+  margin-left: 4px;
+}
+
+body #wrap #btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body #wrap #btns .btn {
+  margin: 2px;
+  height: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: white;
+  background-color: #313131;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-transition: scale .2s;
+  transition: scale .2s;
+  -webkit-box-shadow: 8px 7px 10px -5px #000000bf;
+  box-shadow: 8px 7px 30px -10px #000000bf;
+}
+
+body #wrap #btns .btn:hover {
+  scale: 1.03;
+}
+
+body #wrap #btns #gerar {
+  width: 50%;
+  border-radius: 20px 0 0 20px;
+}
+
+body #wrap #btns #copiar {
+  width: 50%;
+  border-radius: 0 20px 20px 0;
+}
+/*# sourceMappingURL=home.css.map */
