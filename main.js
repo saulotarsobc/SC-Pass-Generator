@@ -11,9 +11,9 @@ function createWindow() {
         minHeight: 600,
         webPreferences: {
             nodeIntegration: true,
-            preload: path.join(__dirname, './preload.js')
+            preload: path.join(__dirname, './preload.js'),
         },
-        icon: path.join(__dirname, './icon.png')
+        icon: path.join(__dirname, './icon/icon.png'),
     });
     mainWindow.loadFile('index.html');
     mainWindow.setMenu(null);
