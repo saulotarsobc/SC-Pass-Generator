@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
         ipcRenderer.send('request-main-process-action', pass.innerHTML);
         setTimeout(() => {
             alert("Senha copiada: " + (pass.innerHTML));
-        }, 400);
+        }, 200);
     });
 
     gerar.addEventListener('click', () => {
