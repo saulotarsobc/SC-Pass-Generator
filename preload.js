@@ -242,4 +242,3 @@ window.addEventListener('DOMContentLoaded', () => {
     updateSize(LESS_LIMIT);
     updateSecurityLevel();
 })
-
