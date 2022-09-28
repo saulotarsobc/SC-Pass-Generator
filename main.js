@@ -4,11 +4,11 @@ const { app, BrowserWindow } = require('electron');
 function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 390,
-    height: 580,
+    height: 600,
     maxWidth: 390,
-    maxHeight: 580,
+    maxHeight: 600,
     minWidth: 390,
-    minHeight: 580,
+    minHeight: 600,
   });
 
   mainWindow.loadFile('index.html');
