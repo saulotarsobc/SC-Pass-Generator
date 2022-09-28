@@ -1,7 +1,7 @@
 <h1>GERADOR DE SENHAS</h1>
 
 <div style="align-items:center">
-    <img src="./img/banner4.png" alt="banner">
+    <img src="./img/banner.png" alt="banner">
 </div>
 
 <hr>
