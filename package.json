@@ -1,23 +1,28 @@
 {
-  "name": "gerador_de_senhas",
-  "version": "1.0.0",
+  "name": "pass-generator",
+  "version": "3.0.0",
   "description": "Aplicativo para gerar senhas aleatórias",
   "main": "main.js",
+  "icon": "./buid/icon.png",
+  "build": {
+    "productName": "SC Pass Generator",
+    "appId": "saulotarsobc.sc.pass.generator"
+  },
   "scripts": {
     "lint:js": "eslint --fix --ext \".js\" .",
     "start-debug": "electron .  --trace-warnings > ./app-run.log  2>&1",
     "start": "electron .",
-    "pack-win": "electron-builder --win",
-    "pack-win-test": "electron-builder --dir --win",
-    "pack-linux-test": "electron-builder --dir --linux",
-    "pack-linux": "electron-builder --linux",
-    "pack-mac": "electron-builder --mac",
+    "win": "electron-builder --win",
+    "win-test": "electron-builder --dir --win",
+    "linux-test": "electron-builder --dir --linux",
+    "linux": "electron-builder --linux",
+    "mac": "electron-builder --mac",
     "publish": "electron-builder --win -p always",
     "publish-linux": "electron-builder --linux -p always",
     "postinstall": "electron-builder install-app-deps",
     "release": "electron-builder"
   },
-  "repository": "https://github.com/saulotarsobc/app_gerador_de_senhas",
+  "repository": "https://github.com/saulotarsobc/SC-Pass-Generator",
   "keywords": [
     "gerador",
     "senhas",
