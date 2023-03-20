@@ -20,20 +20,20 @@
     "publish": "electron-builder --win -p always",
     "publish-linux": "electron-builder --linux -p always",
     "postinstall": "electron-builder install-app-deps",
-    "release": "electron-builder"
+    "release": "electron-builder",
+    "sass": "sass -w scss/main.scss css/main.min.css -s compressed"
   },
   "repository": "https://github.com/saulotarsobc/SC-Pass-Generator",
   "keywords": [
     "gerador",
     "senhas",
-    "aleatórias"
+    "aleatórias",
+    "electron-js"
   ],
   "author": "Saulo Costa",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^20.2.0",
-    "electron-builder": "^23.3.3"
-  },
-  "dependencies": {
-    "bootstrap": "^5.2.1"
+    "electron": "^23.1.4",
+    "electron-builder": "^23.6.0"
   }
 }
