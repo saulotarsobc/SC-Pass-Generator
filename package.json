@@ -6,13 +6,22 @@
   "icon": "./buid/icon.png",
   "build": {
     "productName": "SC Pass Generator",
-    "appId": "saulotarsobc.sc.pass.generator"
+    "appId": "saulotarsobc.sc.pass.generator",
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "license": "./licence.md"
+    }
   },
   "scripts": {
     "lint:js": "eslint --fix --ext \".js\" .",
     "start-debug": "electron .  --trace-warnings > ./app-run.log  2>&1",
     "start": "electron .",
-    "win": "electron-builder --win --x64 --config electron-builder.yml",
+    "win": "electron-builder --win --x64",
     "win-test": "electron-builder --dir --win",
     "linux-test": "electron-builder --dir --linux",
     "linux": "electron-builder --linux",
