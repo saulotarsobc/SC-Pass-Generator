@@ -1,6 +1,6 @@
 {
   "name": "pass-generator",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Aplicativo para gerar senhas aleatórias",
   "main": "main.js",
   "icon": "./buid/icon.png",
@@ -12,7 +12,7 @@
     "lint:js": "eslint --fix --ext \".js\" .",
     "start-debug": "electron .  --trace-warnings > ./app-run.log  2>&1",
     "start": "electron .",
-    "win": "electron-builder --win",
+    "win": "electron-builder --win --x64 --config electron-builder.yml",
     "win-test": "electron-builder --dir --win",
     "linux-test": "electron-builder --dir --linux",
     "linux": "electron-builder --linux",
@@ -20,7 +20,7 @@
     "publish": "electron-builder --win -p always",
     "publish-linux": "electron-builder --linux -p always",
     "postinstall": "electron-builder install-app-deps",
-    "release": "electron-builder",
+    "release": "electron-builder --config electron-builder.yml",
     "sass": "sass -w scss/main.scss css/main.min.css -s compressed"
   },
   "repository": "https://github.com/saulotarsobc/SC-Pass-Generator",

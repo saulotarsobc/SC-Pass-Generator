@@ -2,3 +2,5 @@ node_modules
 dist
 .env
 yarn.lock
+/cert
+electron-builder.yml
