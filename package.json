@@ -20,7 +20,7 @@
     "publish": "electron-builder --win -p always",
     "publish-linux": "electron-builder --linux -p always",
     "postinstall": "electron-builder install-app-deps",
-    "release": "electron-builder --config electron-builder.yml",
+    "release": "electron-builder",
     "sass": "sass -w scss/main.scss css/main.min.css -s compressed"
   },
   "repository": "https://github.com/saulotarsobc/SC-Pass-Generator",
